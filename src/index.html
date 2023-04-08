@@ -7,6 +7,7 @@
     <title>Weather App</title>
     <link rel="icon" type="image/x-icon" href="../assets/logo/logo.png" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./all.css" />
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js"
       integrity="sha512-LUKzDoJKOLqnxGWWIBM4lzRBlxcva2ZTztO8bTcWPmDSpkErWx0bSP4pdsjNH8kiHAUPaT06UXcb+vOEZH+HpQ=="
@@ -15,31 +16,70 @@
     ></script>
     <script src="location.js" type="module" defer></script>
     <script
-      src="https://kit.fontawesome.com/595a890311.js"
+      src="https://kit.fontawesome.com/e364cf88dd.js"
       crossorigin="anonymous"
-      defer
     ></script>
   </head>
   <body>
     <main>
-      <ol>
+      <div class="searchBox">
+        <input
+          type="text"
+          placeholder="Enter a city..."
+          name=""
+          class="inputBox"
+        />
+        <button class="fa-solid fa-magnifying-glass searchButton"></button>
+      </div>
+
+      <ol class="weatherBody">
+        <li><h1 class="city"></h1></li>
+        <li><img class="weatherImg" alt="Current weather" /></li>
         <li>
-          <div class="searchBox">
-            <input
-              type="text"
-              placeholder="Enter a city..."
-              name=""
-              class="inputBox"
-            />
-            <button class="fa-solid fa-magnifying-glass searchButton"></button>
+          <div class="weatherSummary">
+            <p class="temperature"></p>
+            <p class="description"></p>
           </div>
         </li>
-        <li><p class="city"></p></li>
-        <li><img src="../assets/images/mist.png" class="weatherImg" /></li>
-        <li><p class="temperature"></p></li>
-        <li><p class="weatherInfo"></p></li>
-        <li><p class="windSpeed"></p></li>
-        <li><p class="humidity"></p></li>
+        <li>
+          <div class="additionalInfo">
+            <div class="humidity">
+              <img
+                src="../assets/images/humidity.png"
+                class="icon"
+                alt="Humidity icon"
+              />
+              <span class="humValue"></span>
+            </div>
+
+            <div class="windSpeed">
+              <img
+                src="../assets/images/wind.png"
+                class="icon"
+                alt="Wind icon"
+              />
+              <span class="windSpeedValue"></span>
+            </div>
+
+            <div class="sunrise">
+              <img
+                src="../assets/images/sunrise.png"
+                class="icon"
+                alt="Sunrise icon"
+              />
+              <span class="sunriseTime"></span>
+            </div>
+
+            <div class="sunset">
+              <img
+                src="../assets/images/sunset.png"
+                class="icon"
+                alt="Sunset icon"
+              />
+              <span class="sunsetTime"></span>
+            </div>
+          </div>
+        </li>
       </ol>
     </main>
   </body>

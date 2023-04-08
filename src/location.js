@@ -1,4 +1,4 @@
-import { checkWeather } from "./script.js";
+import { checkWeather } from "./weather.js";
 let userLocation = navigator.geolocation;
 
 function geolocator() {
@@ -19,7 +19,7 @@ async function getLocation(data) {
     response.json()
   );
   checkWeather(locationData[0].name);
-  console.log(locationData[0].name);
+  //console.log(locationData[0].name);
 }
 
 geolocator();
