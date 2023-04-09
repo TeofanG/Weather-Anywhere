@@ -7,55 +7,57 @@ body {
   min-height: 100vh;
   margin: 0;
   overflow: hidden;
-  font-family: sans-serif;
-  background-image: url("/assets/images/rain.gif");
+  background-color: rgb(226, 223, 220);
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
   background-size: 100% auto;
-  background-origin: border-box;
+  font-family: sans-serif;
   font-size: 100%;
 }
 
 main {
   display: block;
-  margin: auto;
-  margin-top: 4em;
-  box-shadow: rgb(0, 0, 0) 0px 7px 29px 0px;
   width: 25%;
   height: auto;
+  margin: auto;
+  padding: 2em;
+  margin-top: 4em;
   background-color: #fff;
   border-radius: 12px;
-  padding: 28px;
+  box-shadow: rgb(0, 0, 0) 0px 7px 29px 0px;
 }
 
 .searchBox {
-  display: flex;
-  flex-direction: row;
-  margin: auto;
+  display: inline-flex;
+  gap: 10px;
   width: 100%;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .searchBox input {
-  margin-right: 20px;
   width: 100%;
-  border: none;
-  font-size: 1em;
-  text-transform: capitalize;
-  color: #000;
-  background-color: #e6f5fb;
   padding: 1em;
+  background-color: rgb(217, 238, 248);
+  font-size: 1em;
+  border-color: transparent;
   border-radius: 14px;
+  text-transform: capitalize;
 }
 
 .searchBox button {
-  border: none;
-  font-size: 1rem;
-  min-width: 12%;
-  height: 46px;
-  background-color: #e6f5fb;
-  border-radius: 50%;
   cursor: pointer;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+}
+
+.searchBox input:hover {
+  border: 2px solid rgb(145, 213, 245);
+}
+
+.searchBox button:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
 }
 
 .weatherBody {
@@ -69,87 +71,70 @@ main {
   display: block;
   margin: auto;
   margin-top: 30px;
-  text-align: center;
   font-size: 1.5rem;
+  text-align: center;
 }
 
 .weatherImg {
   display: block;
-  margin: auto;
-  width: 80%;
+  width: 70%;
   height: auto;
+  margin: auto;
 }
 
 .weatherSummary {
+  display: inline-block;
   width: 100%;
-  display: block;
-  margin: auto;
+  margin-bottom: 2em;
   text-align: center;
 }
 
 .temperature {
-  margin-bottom: 7px;
+  margin-top: 0;
+  margin-bottom: 0.3em;
   font-weight: bold;
   font-size: 1.5em;
+  text-align: center;
 }
 
 .description {
   margin: 0;
+  text-align: center;
   text-transform: capitalize;
 }
 
-.icon {
-  width: 40px;
-  height: 40px;
-}
-
 .additionalInfo {
-  display: grid;
-  margin-top: 2em;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
 }
 
-.weatherBody div {
+.additionalInfo div {
+  flex-basis: 50%;
+}
+
+.additionalInfo .icon {
   text-align: center;
+  vertical-align: bottom;
+  margin-left: 0.6em;
 }
 
 span {
-  margin-left: 10px;
   vertical-align: super;
-}
-/*
-.searchBox input:hover {
-  border: 1px solid lightblue;
+  margin-left: 0.6em;
+  text-align: center;
 }
 
-.searchBox button:hover {
-  transition: 0.5s;
-  background-color: lightblue;
+.locationNotFound {
+  display: none;
+  font-size: 1.3em;
+  text-align: center;
+  margin-top: 2.5em;
 }
 
-.header {
-  display: block;
+.icon {
+  width: 100%;
+  height: auto;
+  max-width: 40px;
+  min-width: 20px;
 }
-
-.weatherBody {
-  display: 100px;
-  padding: 20px;
-  justify-content: center;
-  align-items: center;
-  margin-block: 20px;
-}
-
-.weatherBody p {
-  display: block;
-  margin: auto;
-}
-
-.weatherImage {
-  display: block;
-  margin: auto;
-  width: 50%;
-  height: 40%;
-}
-
-
-*/

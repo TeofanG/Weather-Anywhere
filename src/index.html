@@ -7,18 +7,7 @@
     <title>Weather App</title>
     <link rel="icon" type="image/x-icon" href="../assets/logo/logo.png" />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./all.css" />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js"
-      integrity="sha512-LUKzDoJKOLqnxGWWIBM4lzRBlxcva2ZTztO8bTcWPmDSpkErWx0bSP4pdsjNH8kiHAUPaT06UXcb+vOEZH+HpQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
     <script src="location.js" type="module" defer></script>
-    <script
-      src="https://kit.fontawesome.com/e364cf88dd.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
     <main>
@@ -29,7 +18,13 @@
           name=""
           class="inputBox"
         />
-        <button class="fa-solid fa-magnifying-glass searchButton"></button>
+        <button class="searchButton">
+          <img
+            src="../assets/images/search.png"
+            alt="Search icon"
+            class="icon"
+          />
+        </button>
       </div>
 
       <ol class="weatherBody">
@@ -81,6 +76,9 @@
           </div>
         </li>
       </ol>
+      <div class="locationNotFound">
+        <p>Sorry, location not found!</p>
+      </div>
     </main>
   </body>
 </html>
