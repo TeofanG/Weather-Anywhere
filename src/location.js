@@ -1,7 +1,7 @@
 import { checkWeather } from "./weather.js";
 let userLocation = navigator.geolocation;
 
-function geolocator() {
+export function geolocator() {
   if (userLocation) {
     userLocation.getCurrentPosition(getLocation);
   } else {
@@ -18,7 +18,7 @@ async function getLocation(data) {
   const locationData = await fetch(`${apiUrl}`).then((response) =>
     response.json()
   );
-  console.log(locationData[0].name);
+  //console.log(locationData[0].name);
   checkWeather(locationData[0].name);
 }
 
