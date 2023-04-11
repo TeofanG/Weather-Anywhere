@@ -1,6 +1,19 @@
 {
-  "dependencies": {
-    "boostrap": "^2.0.0",
-    "bootstrap": "^5.2.3"
-  }
+  "name": "weather-anywhere",
+  "version": "1.0.0",
+  "description": "Weather Anywhere is a web application built in Html5, CSS and Vanilla Javascript that allows users view the current weather in a specific location. \r This project was made for Accesa & RaRo 2023 Internship (technical evaluation).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TeofanG/Accesa-Internship-Project-Weather-App.git"
+  },
+  "author": "teofang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TeofanG/Accesa-Internship-Project-Weather-App/issues"
+  },
+  "homepage": "https://github.com/TeofanG/Accesa-Internship-Project-Weather-App#readme"
 }

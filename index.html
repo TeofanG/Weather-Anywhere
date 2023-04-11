@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Anywhere</title>
+    <link rel="icon" type="image/x-icon" href="../assets/logo/logo.png" />
+    <link  type="text/css" rel="stylesheet" href="./styles/style.css" />
+    <script src="./scripts/location.js" type="module" defer></script>
+    <script src="./scripts/script.js" type="module" defer></script>
+  </head>
+  <body>
+    <!-- Header contains a button and the list of favorites locations which is displayed
+    when the button is hovered-->
+    <header>
+      <button title="Go to favorite cities" alt="See weather favorites cities">
+        <img src="../assets/icons/favorited.png" class="icon" />
+      </button>
+      <div class="favSection"></div>
+    </header>
+    <!--Contains an input for searching a city and the current weather information from that city-->
+    <main class="container">
+      <div class="searchBox">
+        <input
+          type="text"
+          placeholder="Enter a city..."
+          name=""
+          class="inputBox"
+        />
+        <button class="searchButton">
+          <img
+            src="../assets/icons/search.png"
+            alt="Search icon"
+            class="icon"
+          />
+        </button>
+      </div>
+
+      <ol class="weatherBody">
+        <li>
+          <div class="location">
+            <h1 class="city"></h1>
+            <button title="Add city to favorites" id="add2fav">
+              <img
+                src="../assets/icons/add_favorite.png"
+                alt="Add to favorite button"
+                class="icon"
+              />
+            </button>
+          </div>
+        </li>
+        <li><img class="weatherImg" alt="Current weather" /></li>
+        <li>
+          <div class="weatherSummary">
+            <p class="temperature"></p>
+            <p class="description"></p>
+          </div>
+        </li>
+        <li>
+          <!--Display other weather details like humidity, wind sped, sunrise, sunset-->
+          <div class="additionalInfo">
+            <div class="humidity">
+              <img
+                src="../assets/icons/humidity.png"
+                class="icon"
+                alt="Humidity icon"
+              />
+              <span class="humValue"></span>
+            </div>
+
+            <div class="windSpeed">
+              <img
+                src="../assets/icons/wind.png"
+                class="icon"
+                alt="Wind icon"
+              />
+              <span class="windSpeedValue"></span>
+            </div>
+
+            <div class="sunrise">
+              <img
+                src="../assets/icons/sunrise.png"
+                class="icon"
+                alt="Sunrise icon"
+              />
+              <span class="sunriseTime"></span>
+            </div>
+
+            <div class="sunset">
+              <img
+                src="../assets/icons/sunset.png"
+                class="icon"
+                alt="Sunset icon"
+              />
+              <span class="sunsetTime"></span>
+            </div>
+          </div>
+        </li>
+      </ol>
+      <!--Error message if location could not be found-->
+      <div class="locationNotFound">
+        <p>Sorry, location not found!</p>
+      </div>
+    </main>
+  </body>
+</html>
