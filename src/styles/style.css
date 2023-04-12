@@ -2,12 +2,18 @@
 @media screen and (min-aspect-ratio: 2/3) {
   body {
     background-size: 100% 100% !important;
+    overflow: hidden !important;
   }
 }
 @media screen and (max-aspect-ratio: 2/3) {
   body {
     background-size: 100% auto !important;
     background-repeat: repeat-y !important;
+    margin-bottom: 20em !important;
+  }
+  main{
+    width: 60% !important;
+    height: max-content !important;
   }
 }
 
@@ -56,6 +62,8 @@ header {
   width: auto;
   height: fit-content;
   color: white;
+  position: absolute;
+  top: 0;
 }
 
 header > button {
@@ -108,9 +116,7 @@ header > button {
 
 main {
   display:block;
-  position: relative;
-  top: 3em;
-  margin: auto;
+  margin: 2em auto;
   padding: 2em;
   width: 25%;
   height: auto;
