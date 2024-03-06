@@ -1,5 +1,5 @@
 Weather Anywhere is a web application built in Html5, CSS and Vanilla Javascript that allows users view the current weather in a specific location. 
-This project was made for Accesa & RaRo 2023 Internship (technical evaluation). 
+
 
 List with the implemented functionalities:
 
