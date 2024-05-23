@@ -1,6 +1,5 @@
 Weather Anywhere is a web application built in Html5, CSS and Vanilla Javascript that allows users view the current weather in a specific location. 
 
-
 List with the implemented functionalities:
 
 - viewing weather information in any location (temperature, humidity, wind speed etc.);
@@ -13,3 +12,5 @@ Run the app following the next steps(node.js is required in order to run the loc
 
 1. Open your terminal and navigate to the project directory
 2. Run "live-server" command (it should open the app, if not go to "http://localhost:8080/")
+
+![image](https://github.com/TeofanG/Weather-Anywhere/assets/52110769/4ff8b311-f4f9-448b-b24c-f1d521b1b388)
